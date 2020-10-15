@@ -1,0 +1,18 @@
+sisi server [penyedian id] => client
+
+
+
+
+sisi client => server
+  ssh-keygen -t rsa
+----------------------------
+  nano config
+      Host NAMASEMBARANG
+          HostName 192.168.1.20 (ip server)
+          User t1 (nama user server)
+          Port 22 (port ssh)
+----------------------------
+  ssh-copy-id t1@192.168.1.20
+----------------------------
+  #RUN
+  ssh NAMASEMBARANG
